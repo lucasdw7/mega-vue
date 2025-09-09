@@ -1,39 +1,36 @@
 <template>
-  <div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <h3 class="text-3xl">{{ magicNumber }}</h3>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+  <div class="bg-warning-subtle">
+    <h5>Text Interpolation Mode : Composition</h5>
+    <p class="text-center">{{unLivre}}</p>
+    <p class="text-center">{{isOnline}}</p>
+    <p class="text-center">{{unNombre}}</p>
+    <p class="text-center">{{unTableau}}</p>
+    <p class="text-center">{{unTableau[0]}}</p>
+    <p class="text-center">{{unObjet}}</p>
+    <p class="text-center">{{unObjet.name}}</p>
+    <p class="text-center">{{unObjet['name']}}</p>
+    <p class="text-center">{{unObjet.tel}}</p>
+    <p class="text-center">{{unObjet.tel}}</p>
+    <p class="text-center">{{fonctionTest()}}</p>
   </div>
-</div>
-
-<div class="card-body">
-  <h2 class="card-title"> {{ magicString }}</h2>
-  <h3 class="text-xl"> age: {{ magicNumber }} </h3>
-  <p>{{ magicTab[[]] }}</p>
-  <p>{{ magicObject }}</p>
-  <p>{{ magicBooleen }}</p>
-
-
-</div>
 </template>
 
-<script setup lang="js">
-const magicNumber = 42;
-const magicString = 'Pepe la débrouille';
-const magicBooleen = true;
-const magicTab = ['archi','journaliste']
-const magicObject = {'rugby':'basket'};
+<script lang='js' setup>
+import { ref } from 'vue'
+
+const unLivre = ref('Les mémoires de Steven Seagal');
+const unTableau = ref(['du texte', 99]);
+const unNombre = ref(1234567890);
+const isOnline=ref(false);
+const unObjet = ref({
+  name: 'COOL',
+  tel: '060503030',
+});
+
+const fonctionTest = () => {
+  return 'Hello World';
+}
 </script>
 
-
-<style scoped>
+<style scoped lang="css">
 </style>
