@@ -1,36 +1,27 @@
 <template>
-  <div class="bg-warning-subtle">
-    <h5>Text Interpolation Mode : Composition</h5>
-    <p class="text-center">{{unLivre}}</p>
-    <p class="text-center">{{isOnline}}</p>
-    <p class="text-center">{{unNombre}}</p>
-    <p class="text-center">{{unTableau}}</p>
-    <p class="text-center">{{unTableau[0]}}</p>
-    <p class="text-center">{{unObjet}}</p>
-    <p class="text-center">{{unObjet.name}}</p>
-    <p class="text-center">{{unObjet['name']}}</p>
-    <p class="text-center">{{unObjet.tel}}</p>
-    <p class="text-center">{{unObjet.tel}}</p>
-    <p class="text-center">{{fonctionTest()}}</p>
+  <div class="min-h-screen flex flex-col bg-base-200 text-base-content">
+    <!-- Navbar en haut de la page -->
+    <AppHeader />
+    <!-- Conteneur principal du contenu, centré et responsive -->
+    <main class="flex-1 w-full max-w-7xl mx-auto p-4 md:p-8">
+      <!-- Ici on aura la router view -->
+      <router-view></router-view>
+       <!-- <h1>ICI c'est TOULOUSE</h1> -->
+    </main>
+    <!-- Footer en bas de la page -->
+    <AppFooter/>
   </div>
 </template>
 
-<script lang='js' setup>
-import { ref } from 'vue'
-
-const unLivre = ref('Les mémoires de Steven Seagal');
-const unTableau = ref(['du texte', 99]);
-const unNombre = ref(1234567890);
-const isOnline=ref(false);
-const unObjet = ref({
-  name: 'COOL',
-  tel: '060503030',
-});
-
-const fonctionTest = () => {
-  return 'Hello World';
-}
+<script setup>
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+// Pas de logique spécifique nécessaire ici,
+// Nuxt gère automatiquement la mise en page
+// avec les composants de layout.
 </script>
 
-<style scoped lang="css">
+<style>
+/* Les styles globaux peuvent être ajoutés ici si nécessaire */
+/* Par exemple, si vous n'avez pas de fichier main.css séparé */
 </style>
