@@ -96,6 +96,9 @@
             <li>
               <router-link to="/tp-2" class="hover:text-primary">Tp-2-Von</router-link>
             </li>
+            <li>
+              <router-link to="/tp-3" class="hover:text-primary">Tp-style Dynamique</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -193,6 +196,9 @@
             </li>
             <li>
               <router-link to="/tp-2" class="hover:text-primary">Tp-2-Von</router-link>
+            </li>
+            <li>
+              <router-link to="/tp-3" class="hover:text-primary">Tp-style Dynamique</router-link>
             </li>
           </ul>
         </details>

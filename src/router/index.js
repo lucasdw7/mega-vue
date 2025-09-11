@@ -129,6 +129,11 @@ const router = createRouter({
             path: '/tp-2',
             name: 'TP-2',
             component: () => import('../views/tp/Tp-vOn.vue')
+        },
+        {
+            path: '/tp-3',
+            name: 'TP-style-dynamique',
+            component: () => import('../views/tp/Tp-styleDynamic.vue')
         }
     ]
 });
