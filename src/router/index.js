@@ -72,6 +72,11 @@ const router = createRouter({
             name: 'Exo-watch',
             component: () => import('../views/exercices/ExoWatchers.vue')
         },
+        {
+            path: '/exo-style',
+            name: 'Exo-styleDyn',
+            component: () => import('../views/exercices/Exo-styleDynamique.vue')
+        },
 
         // ======================
         // Leçons

@@ -80,6 +80,9 @@
             <li>
               <router-link to="/exo-watch" class="hover:text-primary">Exo-watchers</router-link>
             </li>
+            <li>
+              <router-link to="/exo-style" class="hover:text-primary">Exo-styleDynamique</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -174,6 +177,9 @@
             </li>
             <li>
               <router-link to="/exo-watch" class="hover:text-primary">Exo-watchers</router-link>
+            </li>
+             <li>
+              <router-link to="/exo-style" class="hover:text-primary">Exo-styleDynamique</router-link>
             </li>
           </ul>
         </details>
