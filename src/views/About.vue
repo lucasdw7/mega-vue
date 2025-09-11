@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>Bonjour</h1>
+  <h1>About</h1>
   </div>
 </template>
 
 <script setup lang='js'>
+// import { ref, watch } from 'vue';
 
 </script>
 

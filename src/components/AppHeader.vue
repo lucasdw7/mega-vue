@@ -1,34 +1,108 @@
+<!-- ===========================================================
+     💡 Mini Fiche : Composant AppHeader.vue
+     
+     Objectif :
+     - Créer une barre de navigation (header) responsive.
+     - Afficher le logo et le menu principal.
+     - Menu desktop visible, menu mobile (dropdown) pour petits écrans.
+     - DaisyUI + Tailwind pour le style.
+
+     Points clés :
+     - router-link : navigation interne SPA.
+     - lg:hidden / lg:flex : classes Tailwind pour responsive.
+     - tabindex=0 : navigation clavier pour le menu déroulant.
+     - sticky + z-50 : header toujours visible.
+     - Bonnes pratiques : texte clair, éléments accessibles, responsive design.
+   =========================================================== -->
 <template>
   <header class="navbar bg-base-100 shadow-lg rounded-box sticky top-0 z-50">
     <div class="container mx-auto px-4 sm:px-8">
+
       <!-- Logo et nom de l'application -->
       <div class="flex-1">
+        <!-- Bouton/logo cliquable renvoyant vers la page d'accueil -->
         <a href="/" class="btn btn-ghost normal-case text-xl font-bold text-primary">
-          MaNuxtApp
+         Mega-Vue
         </a>
       </div>
 
-      <!-- Menu de navigation principal pour les écrans larges -->
+      <!-- Menu principal pour les grands écrans -->
       <nav class="flex-none hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
+          <!-- Chaque item est un router-link pour navigation SPA -->
           <li class="rounded-box">
-            <router-link to="/home" class="hover:text-primary">Accueil</router-link>
+            <router-link to="/" class="hover:text-primary">Accueil</router-link>
           </li>
           <li class="rounded-box">
-            <router-link to="/about" class="hover:text-primary">À propos</router-link>
+             <details>
+          <summary>Leçons</summary>
+          <ul class="p-2 w-3xs ">
+            <li>
+              <router-link to="/lesson-bind" class="hover:text-primary">Attribute-binding</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-in-templ" class="hover:text-primary">Inline-templating</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-event-bind" class="hover:text-primary">Event-binding</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-two-way" class="hover:text-primary">Two-way-binding</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-computed" class="hover:text-primary">Computed-properties</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-watchers" class="hover:text-primary">Watchers</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-dyn-style" class="hover:text-primary">Style dynamique</router-link>
+            </li>
+          </ul>
+        </details>
           </li>
           <li class="rounded-box">
-            <router-link to="/" class="hover:text-primary">Services</router-link>
+             <details>
+          <summary>Exercices</summary>
+          <ul class="p-2 w-3xs ">
+            <li>
+              <router-link to="/exo-1" class="hover:text-primary">Exo-1</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-dir" class="hover:text-primary">Exo-directive</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-num" class="hover:text-primary">Exo-nombreV-On</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-bug" class="hover:text-primary">Exo-Counter</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-watch" class="hover:text-primary">Exo-watchers</router-link>
+            </li>
+          </ul>
+        </details>
           </li>
           <li class="rounded-box">
-            <router-link to="/" class="hover:text-primary">Contact</router-link>
+             <details>
+          <summary>Tp</summary>
+          <ul class="p-2 w-3xs ">
+            <li>
+              <router-link to="/tp-1" class="hover:text-primary">Tp-1</router-link>
+            </li>
+            <li>
+              <router-link to="/tp-2" class="hover:text-primary">Tp-2-Von</router-link>
+            </li>
+          </ul>
+        </details>
           </li>
         </ul>
       </nav>
 
       <!-- Menu déroulant pour les écrans mobiles -->
       <div class="flex-none lg:hidden">
-        <div class="dropdown dropdown-end">
+        <div class="dropdown ">
+          <!-- Bouton hamburger pour ouvrir le menu mobile -->
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,22 +119,78 @@
               />
             </svg>
           </label>
+
+          <!-- Contenu du menu mobile -->
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            class="menu menu-compact dropdown-content mt-3 p-2 w-3xs shadow bg-base-100 rounded-box w-auto"
           >
+           <li class="rounded-box">
+            <router-link to="/" class="hover:text-primary">Accueil</router-link>
+          </li>
+          <li class="rounded-box">
+             <details>
+          <summary>Leçons</summary>
+          <ul class="p-2 w-3xs ">
             <li>
-              <router-link to="/home" class="hover:text-primary">Accueil</router-link>
+              <router-link to="/lesson-bind" class="hover:text-primary">Attribute-binding</router-link>
             </li>
             <li>
-              <router-link to="'about" class="hover:text-primary">À propos</router-link>
+              <router-link to="/lesson-in-templ" class="hover:text-primary">Inline-templating</router-link>
             </li>
             <li>
-              <router-link to="/" class="hover:text-primary">Services</router-link>
+              <router-link to="/lesson-event-bind" class="hover:text-primary">Event-binding</router-link>
             </li>
             <li>
-              <router-link to="/" class="hover:text-primary">Contact</router-link>
+              <router-link to="/lesson-two-way" class="hover:text-primary">Two-way-binding</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-computed" class="hover:text-primary">Computed-properties</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-watchers" class="hover:text-primary">Watchers</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-dyn-style" class="hover:text-primary">Style dynamique</router-link>
+            </li>
+          </ul>
+        </details>
+          </li>
+          <li class="rounded-box">
+             <details>
+          <summary>Exercices</summary>
+          <ul class="p-2 w-3xs ">
+            <li>
+              <router-link to="/exo-1" class="hover:text-primary">Exo-1</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-dir" class="hover:text-primary">Exo-directive</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-num" class="hover:text-primary">Exo-nombreV-On</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-bug" class="hover:text-primary">Exo-Counter</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-watch" class="hover:text-primary">Exo-watchers</router-link>
+            </li>
+          </ul>
+        </details>
+          </li>
+          <li class="rounded-box">
+             <details>
+          <summary>Tp</summary>
+          <ul class="p-2 w-3xs ">
+            <li>
+              <router-link to="/tp-1" class="hover:text-primary">Tp-1</router-link>
+            </li>
+            <li>
+              <router-link to="/tp-2" class="hover:text-primary">Tp-2-Von</router-link>
+            </li>
+          </ul>
+        </details>
+          </li>
           </ul>
         </div>
       </div>
@@ -69,9 +199,17 @@
 </template>
 
 <script setup>
+/**
+ * Script Setup - Vue 3
+ * - Import RouterLink nécessaire pour navigation interne SPA.
+ * - Ici on utilise uniquement router-link → pas de logique JS additionnelle.
+ */
 import { RouterLink } from "vue-router";
 </script>
 
 <style scoped>
-/* Pas de styles spécifiques car DaisyUI est utilisé. */
+/* Pas de styles personnalisés ici
+   - DaisyUI + Tailwind gèrent la mise en page et le design.
+   - Bonnes pratiques : garder le style global cohérent et réutilisable.
+*/
 </style>
