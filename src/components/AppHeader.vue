@@ -58,6 +58,9 @@
             <li>
               <router-link to="/lesson-dyn-style" class="hover:text-primary">Style dynamique</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-conditions" class="hover:text-primary">Conditional Rendering</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -82,6 +85,9 @@
             </li>
             <li>
               <router-link to="/exo-style" class="hover:text-primary">Exo-styleDynamique</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-if" class="hover:text-primary">Exo-If</router-link>
             </li>
           </ul>
         </details>
@@ -159,6 +165,9 @@
             <li>
               <router-link to="/lesson-dyn-style" class="hover:text-primary">Style dynamique</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-conditions" class="hover:text-primary">Conditional Rendering</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -183,6 +192,9 @@
             </li>
              <li>
               <router-link to="/exo-style" class="hover:text-primary">Exo-styleDynamique</router-link>
+            </li>
+             <li>
+              <router-link to="/exo-if" class="hover:text-primary">Exo-If</router-link>
             </li>
           </ul>
         </details>

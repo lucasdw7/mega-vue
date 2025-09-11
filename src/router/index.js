@@ -77,6 +77,11 @@ const router = createRouter({
             name: 'Exo-styleDyn',
             component: () => import('../views/exercices/Exo-styleDynamique.vue')
         },
+        {
+            path: '/exo-if',
+            name: 'Exo-if',
+            component: () => import('../views/exercices/Exo-if.vue')
+        },
 
         // ======================
         // Leçons
@@ -115,6 +120,11 @@ const router = createRouter({
             path: '/lesson-dyn-style',
             name: 'lesson-dyn-style',
             component: () => import('../views/lessons/dynamic-styling.vue')
+        },
+        {
+            path: '/lesson-conditions',
+            name: 'lesson-conditions',
+            component: () => import('../views/lessons/conditional-rendering.vue')
         },
 
         // ======================

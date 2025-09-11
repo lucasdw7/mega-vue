@@ -3,13 +3,15 @@
 
   <div class="p-8 flex flex-col">
 
-  <input type="text" placeholder="Hello ou World" class="input input-primary" v-model="textInput" />
+  <input type="text" placeholder="Hello ou World" class="input input-primary" v-model="textInput"/>
 
   <h2 class="text-xl font-bold" :class="choixTexte" v-show="AfficherTitre">Mon titre dynamique</h2>
 
+  <div class="divider"></div>
+
   <input type="text" placeholder="Choix de la couleur" class="input input-secondary" v-model="colorInput" />
 
-  <h3 class="text-xl font-bold mb-6 p-2" :style="{ backgroundColor: colorInput }">Mon titre en couleurs dynamique</h3>
+  <h3 class="text-lg font-bold mb-6 p-2" :style="{ backgroundColor: colorInput }">Mon titre en couleurs dynamique</h3>
 
   </div>
 
