@@ -61,6 +61,9 @@
             <li>
               <router-link to="/lesson-conditions" class="hover:text-primary">Conditional Rendering</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-cycle" class="hover:text-primary">lifeCycle</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -89,6 +92,12 @@
             <li>
               <router-link to="/exo-if" class="hover:text-primary">Exo-If</router-link>
             </li>
+            <li>
+              <router-link to="/exo-cycle" class="hover:text-primary">Exo-Cycle</router-link>
+            </li>
+             <li>
+              <router-link to="/exo-props" class="hover:text-primary">Exo-Props</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -104,6 +113,9 @@
             </li>
             <li>
               <router-link to="/tp-3" class="hover:text-primary">Tp-style Dynamique</router-link>
+            </li>
+             <li>
+              <router-link to="/tp-4" class="hover:text-primary">Tp-props-emit</router-link>
             </li>
           </ul>
         </details>
@@ -168,6 +180,9 @@
             <li>
               <router-link to="/lesson-conditions" class="hover:text-primary">Conditional Rendering</router-link>
             </li>
+             <li>
+              <router-link to="/lesson-cycle" class="hover:text-primary">lifeCycle</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -196,6 +211,12 @@
              <li>
               <router-link to="/exo-if" class="hover:text-primary">Exo-If</router-link>
             </li>
+            <li>
+              <router-link to="/exo-cycle" class="hover:text-primary">Exo-Cycle</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-props" class="hover:text-primary">Exo-Props</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -211,6 +232,9 @@
             </li>
             <li>
               <router-link to="/tp-3" class="hover:text-primary">Tp-style Dynamique</router-link>
+            </li>
+             <li>
+              <router-link to="/tp-4" class="hover:text-primary">Tp-props-emit</router-link>
             </li>
           </ul>
         </details>

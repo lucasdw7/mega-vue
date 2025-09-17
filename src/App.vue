@@ -19,6 +19,9 @@ Points importants :
 
     <!-- ✅ Conteneur principal du contenu (centré et responsive) -->
     <main class="flex-1 w-full max-w-7xl mx-auto p-4 md:p-8">
+      
+          <!-- <PropsTest foo="on passe une props pour FOO" username="On passe une props pour username" /> -->
+
       <!-- Zone dynamique où s’affichent les composants selon la route -->
       <router-view></router-view>
       <!-- Exemple de contenu temporaire pour tester :
@@ -34,6 +37,7 @@ Points importants :
 // Importation des composants globaux
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+import PropsTest from './components/PropsTest.vue';
 
 // ℹ️ Ici pas de logique particulière :
 // Vue Router se charge d’injecter les pages via <router-view>.

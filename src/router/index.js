@@ -82,6 +82,18 @@ const router = createRouter({
             name: 'Exo-if',
             component: () => import('../views/exercices/Exo-if.vue')
         },
+        {
+            path: '/exo-cycle',
+            name: 'Exo-cycle',
+            component: () => import('../views/exercices/Exo-cycle.vue')
+        },
+        {
+            path: '/exo-props',
+            name: 'Exo-props',
+            component: () => import('../views/exercices/FriendList.vue')
+        },
+        
+
 
         // ======================
         // Leçons
@@ -126,6 +138,11 @@ const router = createRouter({
             name: 'lesson-conditions',
             component: () => import('../views/lessons/conditional-rendering.vue')
         },
+        {
+            path: '/lesson-cycle',
+            name: 'lesson-cycle',
+            component: () => import('../views/lessons/lifecycle.vue')
+        },
 
         // ======================
         // Travaux Pratiques (TP)
@@ -144,7 +161,12 @@ const router = createRouter({
             path: '/tp-3',
             name: 'TP-style-dynamique',
             component: () => import('../views/tp/Tp-styleDynamic.vue')
-        }
+        },
+         {
+            path: '/tp-4',
+            name: 'TP-props_emit',
+            component: () => import('../views/tp/Tp-props_emit.vue')
+        },
     ]
 });
 
