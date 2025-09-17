@@ -92,6 +92,21 @@ const router = createRouter({
             name: 'Exo-props',
             component: () => import('../views/exercices/FriendList.vue')
         },
+         {
+            path: '/exo-lifeCycleApiTs',
+            name: 'Exo-lifeCycleApiTs',
+            component: () => import('../views/exercices/lifecycle-api-ts.vue')
+        },
+         {
+            path: '/exo-lifeCycleApi',
+            name: 'Exo-lifeCycleApi',
+            component: () => import('../views/exercices/lifecycle-api.vue')
+        },
+         {
+            path: '/exo-messageCard',
+            name: 'Exo-messageCard',
+            component: () => import('../views/exercices/MessageCard.vue')
+        },
         
 
 
@@ -142,6 +157,26 @@ const router = createRouter({
             path: '/lesson-cycle',
             name: 'lesson-cycle',
             component: () => import('../views/lessons/lifecycle.vue')
+        },
+        {
+            path: '/lesson-chartJS',
+            name: 'lesson-chartJS',
+            component: () => import('../views/lessons/chartjs.vue')
+        },
+        {
+            path: '/lesson-emit',
+            name: 'lesson-emit',
+            component: () => import('../views/lessons/emit.vue')
+        },
+        {
+            path: '/lesson-pinia',
+            name: 'lesson-pinia',
+            component: () => import('../views/lessons/pinia.vue')
+        },
+        {
+            path: '/lesson-props',
+            name: 'lesson-props',
+            component: () => import('../views/lessons/props.vue')
         },
 
         // ======================

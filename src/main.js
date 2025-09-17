@@ -12,10 +12,19 @@
 // - `.mount('#app')` → injecte l’application dans la div avec id="app" (index.html).
 
 
-import { createApp } from 'vue'   // Import de la fonction pour créer l’app
+import { createApp } from 'vue' 
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+ // Import de la fonction pour créer l’app
 import './style.css'              // Import des styles globaux
 import App from './App.vue'       // Composant racine (layout global de l’app)
 import router from './router'     // Import de la configuration du router
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+const app = createApp(App)
+
+app.use(pinia)
 
 // ✅ Initialisation de l’application
 createApp(App)

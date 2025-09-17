@@ -33,3 +33,58 @@ function add(){
 
 <style scoped lang="css">
 </style>
+
+<!-- Correction -->
+
+<!-- <template>
+    <section class="flex justify-center my-6">
+        <form @submit.prevent="submitData" class="card w-full max-w-md bg-base-200 shadow-xl p-6">
+            <h2 class="text-xl font-bold mb-4">Composant Formulaire d'édition 📝</h2>
+
+            <!-- Champ Nom 
+            <div class="form-control mb-4">
+                <label class="label">
+                    <span class="label-text">Votre nom</span>
+                </label>
+                <input v-model="enteredName" type="text" placeholder="Entrez votre nom"
+                    class="input input-bordered input-primary w-full" />
+            </div>
+
+            <!-- Champ Âge 
+            <div class="form-control mb-4">
+                <label class="label">
+                    <span class="label-text">Votre âge</span>
+                </label>
+                <input v-model="enteredAge" type="number" placeholder="Entrez votre âge"
+                    class="input input-bordered input-primary w-full" />
+            </div>
+
+            <!-- Bouton 
+            <div class="form-control mt-6">
+                <button class="btn btn-primary w-full">Mettre à jour</button>
+            </div>
+        </form>
+    </section>
+</template>
+
+<script setup>
+// import { ref } from 'vue'
+
+// Champs du formulaire
+const enteredName = ref('')
+const enteredAge = ref('')
+
+const emit = defineEmits(['set-data'])
+// Émission des données au parent
+function submitData() {
+    // on émet l’évènement
+    // ⚠️ En Composition API, on définit emit :
+    emit('set-data', enteredName.value, enteredAge.value)
+}
+
+// On définit l'emit avec defineEmits
+</script>
+
+<style scoped>
+/* Si tu veux du style custom supplémentaire */
+</style> -->

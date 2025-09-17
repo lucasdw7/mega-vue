@@ -64,6 +64,18 @@
             <li>
               <router-link to="/lesson-cycle" class="hover:text-primary">lifeCycle</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-emit" class="hover:text-primary">Emit</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-props" class="hover:text-primary">Props</router-link>
+            </li>
+            <li>
+            <router-link to="/lesson-chartJS" class="hover:text-primary">Chart.JS</router-link>
+          </li>
+            <li>
+              <router-link to="/lesson-pinia" class="hover:text-primary">Pinia</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -97,6 +109,15 @@
             </li>
              <li>
               <router-link to="/exo-props" class="hover:text-primary">Exo-Props</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-lifeCycleApiTs" class="hover:text-primary">Exo-lifeCycleApi.TS</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-lifeCycleApi" class="hover:text-primary">Exo-lifeCycleApi</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-messageCard" class="hover:text-primary">Exo-MessageCard</router-link>
             </li>
           </ul>
         </details>
@@ -183,6 +204,18 @@
              <li>
               <router-link to="/lesson-cycle" class="hover:text-primary">lifeCycle</router-link>
             </li>
+            <li>
+              <router-link to="/lesson-emit" class="hover:text-primary">Emit</router-link>
+            </li>
+            <li>
+              <router-link to="/lesson-props" class="hover:text-primary">Props</router-link>
+            </li>
+            <li>
+            <router-link to="/lesson-chartJS" class="hover:text-primary">Chart.JS</router-link>
+          </li>
+            <li>
+              <router-link to="/lesson-pinia" class="hover:text-primary">Pinia</router-link>
+            </li>
           </ul>
         </details>
           </li>
@@ -216,6 +249,15 @@
             </li>
             <li>
               <router-link to="/exo-props" class="hover:text-primary">Exo-Props</router-link>
+            </li>
+             <li>
+              <router-link to="/exo-lifeCycleApiTs" class="hover:text-primary">Exo-lifeCycleApi.TS</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-lifeCycleApi" class="hover:text-primary">Exo-lifeCycleApi</router-link>
+            </li>
+            <li>
+              <router-link to="/exo-messageCard" class="hover:text-primary">Exo-MessageCard</router-link>
             </li>
           </ul>
         </details>

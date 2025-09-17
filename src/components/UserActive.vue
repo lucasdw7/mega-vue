@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<UserData/>
+<!-- <UserData/> -->
     
   </div>
 </div>
@@ -36,14 +36,58 @@ const lesAmis = ref([
 const props = defineProps({
     name: {
         type: String,
-        required: true
+        required: true,
+        default: 'regis',
+        validator: (value) => {
+          return value.length > O
+        }
     },
     age: {
         type: Number,
-        required: true
+        required: true,
+        default: 79
     },
 });
 </script>
 
 <style scoped lang="css">
 </style>
+
+<!-- Correction  -->
+
+<!-- <template>
+  <div class="card bg-primary text-primary-content shadow-xl w-80 mx-auto my-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+                Composant affichage des données utilisateur
+            </h2>
+    <div class="card-body items-center text-center">
+      <h4 class="card-title text-xl font-bold">{{ username }}</h4>
+      <p class="text-lg">{{ userage }} ans</p>
+    </div>
+  </div>
+</template>
+
+<script setup>
+// import { defineProps } from 'vue'
+
+// ✅ On déclare les props en Composition API
+const props = defineProps({
+  username: {
+    type: String,
+    required: true,
+    // default: 'John Doe',
+    // validator: (value) => {
+    //   return value.length > 0
+    // }
+  },
+  userage: {
+    type: Number,
+    required: true, 
+    // default: 0
+  }
+})
+</script>
+
+<style scoped>
+/* Tu peux ajouter du style perso ici si besoin */
+</style> -->
